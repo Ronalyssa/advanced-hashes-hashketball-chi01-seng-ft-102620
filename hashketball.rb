@@ -157,9 +157,11 @@ away_team = game_hash[:away][:team_name]
   #binding.pry
 teams.each do |bball_team_name|
     if home_team == name_of_team
-    return teams << game_hash[:home][:colors]
+    teams << game_hash[:home][:colors]
+    return teams
     elsif away == name_of_team
-      return teams << game_hash[:away][:colors]
+      teams << game_hash[:away][:colors]
+      return teams
     end
   end
 end
