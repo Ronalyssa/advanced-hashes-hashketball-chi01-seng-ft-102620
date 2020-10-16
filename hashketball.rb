@@ -1,4 +1,5 @@
 # Write your code below game_hash
+
 def game_hash
   {
     home: {
@@ -126,4 +127,77 @@ def game_hash
   }
 end
 
+
+require 'pry'
 # Write code here
+def num_points_scored(name)
+  players = game_hash[:home][:players] + game_hash[:away][:players]
+  players.each do |stats|
+    if stats[:player_name] == name
+      return stats[:points]
+    end
+  end
+end
+
+
+def shoe_size(name)
+  players = game_hash[:home][:players] + game_hash[:away][:players]
+  players.each do |stats|
+    if stats[:player_name] == name
+      return stats[:shoe]
+    end
+  end
+end
+
+# def team_colors(name_of_team)
+#   teams = []
+#   teams.push(game_hash[:home][:team_name], game_hash[:away][:team_name])
+#   binding.pry
+#   teams.each do |bball_team_name|
+#
+#     if bball_team_name == name_of_team
+#     end
+#     if bball_team_name == game_hash[:home]
+#       if bball_team_name == game_hash[:away]
+#       binding.pry
+#       #if name_of_team ==
+#       #end
+#       game_hash[:home][:colors]
+#       game_hash[:away][:colors]
+#       return
+#     end
+#   end
+# end
+
+
+def team_names
+  teams = []
+  teams.push(game_hash[:home][:team_name], game_hash[:away][:team_name])
+  return teams
+end
+
+def player_numbers(name_of_bball_teams)
+  hash_of_home_numbers = game_hash[:home][:players]
+  hash_of_away_numbers = game_hash[:away][:players]
+  #binding.pry
+
+    home_numbers = []
+    #binding.pry
+    hash_of_home_numbers.each do |indv_player|
+      if hash_of_home_numbers == name_of_bball_teams
+      home_numbers << indv_player[:number]
+    end
+    return home_numbers
+  elsif hash_of_away_numbers == name_of_bball_teams
+    away_numbers[]
+    hash_of_away_numbers.each do |indv_player|
+      away_numbers << indv_player[:number]
+    end
+    return away_numbers
+  end
+end
+
+def player_stats(name)
+  players = game_hash[:home][:players] + game_hash[:away][:players]
+  players[name]
+end
