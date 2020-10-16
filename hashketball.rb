@@ -176,6 +176,7 @@ def player_numbers(name_of_bball_teams)
   if name_of_bball_teams == home_team
     home_team.each do |jersey_num|
       return jersey_num
+    end
   end
 end
 
