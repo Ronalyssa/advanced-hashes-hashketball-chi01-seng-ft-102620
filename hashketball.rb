@@ -185,25 +185,9 @@ def player_numbers(name_of_bball_teams)
   end
 end
 
-
-  #binding.pry
-#   hash_of_home_numbers.each do |indv_player|
-#     if hash_of_home_numbers == name_of_bball_teams
-#     home_numbers << indv_player[:number]
-#     #end
-#     return home_numbers
-#     elsif hash_of_away_numbers == name_of_bball_teams
-#       away_numbers[]
-#       hash_of_away_numbers.each do |indv_player|
-#         away_numbers << indv_player[:number]
-#       end
-#       return away_numbers
-#     end
-#   end
-# end
-
 def player_stats(name)
   players = game_hash[:home][:players] + game_hash[:away][:players]
-  players[name]
-  binding.pry
+  players.each do |stats|
+    if stats[:player_name] == name
+      return stats
 end
