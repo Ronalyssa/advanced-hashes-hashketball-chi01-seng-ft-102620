@@ -204,5 +204,7 @@ def big_shoe_rebounds
   shoe_sizes.sort!
   biggest_shoe_size = shoe_sizes.last
   binding.pry
-  if players[stats][]
+  players.each do |stats|
+    if stats
+    end
 end
