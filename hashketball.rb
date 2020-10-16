@@ -174,14 +174,14 @@ def player_numbers(name_of_bball_teams)
   away_players = game_hash[:away][:players]
   if name_of_bball_teams == home_team
     home_players.each do |player_stats|
-      home_numbers << player_stats[:number]
-      return home_numbers
+      home_numbers << player_stats[:number] 
     end
+    home_numbers
   elsif name_of_bball_teams == away_team
     away_players.each do |player_stats|
       away_numbers << player_stats[:number]
-      return away_numbers
     end
+    away_numbers
   end
 end
 
