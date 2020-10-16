@@ -201,7 +201,7 @@ def big_shoe_rebounds
     shoe_sizes << stats[:shoe]
   end
   shoe_sizes.uniq!
-  shoe_sizes.sort
+  shoe_sizes.sort!
   return shoe_sizes.last
   binding.pry
 end
