@@ -205,7 +205,8 @@ def big_shoe_rebounds
   biggest_shoe_size = shoe_sizes.last
   players.each do |stats|
     binding.pry
-    if stats
+    if stats[:shoe] = biggest_shoe_size
+      return stats[:rebounds]
     end
   end
 end
