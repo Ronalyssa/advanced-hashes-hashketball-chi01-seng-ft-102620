@@ -158,7 +158,7 @@ away_team = game_hash[:away][:team_name]
 teams.each do |bball_team_name|
     if home_team == name_of_team
     return teams << game_hash[:home][:colors]
-     
+
     elsif away == name_of_team
       if bball_team_name == game_hash[:away]
       return teams << game_hash[:away][:colors]
