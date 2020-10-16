@@ -179,7 +179,7 @@ def player_numbers(name_of_bball_teams)
   end
 end
 
-    
+
   #binding.pry
 #   hash_of_home_numbers.each do |indv_player|
 #     if hash_of_home_numbers == name_of_bball_teams
