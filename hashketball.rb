@@ -175,7 +175,7 @@ def player_numbers(name_of_bball_teams)
   binding.pry
   if name_of_bball_teams == home_team
     home_team.each do |jersey_num|
-      return jersey_num
+      return home_team[]
     end
   end
 end
