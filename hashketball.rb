@@ -200,6 +200,9 @@ def big_shoe_rebounds
   players.each do |stats|
     shoe_sizes << stats[:shoe]
   end
-  shoe_sizes
+  shoe_sizes.uniq!
+  shoe_sizes.sort
+  shoe_sizes.last
+
   binding.pry
 end
