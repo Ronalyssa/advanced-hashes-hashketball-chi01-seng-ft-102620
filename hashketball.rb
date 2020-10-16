@@ -202,6 +202,7 @@ def big_shoe_rebounds
   end
   shoe_sizes.uniq!
   shoe_sizes.sort!
-  shoe_sizes.last
+  biggest_shoe_size = shoe_sizes.last
   binding.pry
+  if players[stats][]
 end
