@@ -154,7 +154,7 @@ teams = []
   # teams.push(game_hash[:home][:team_name], game_hash[:away][:team_name])
 home_team = game_hash[:home][:team_name]
 away_team = game_hash[:away][:team_name]
-  binding.pry
+  #binding.pry
 teams.each do |bball_team_name|
     if home_team == name_of_team
     return teams << game_hash[:home][:colors]
