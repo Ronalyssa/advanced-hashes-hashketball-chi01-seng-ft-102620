@@ -150,21 +150,17 @@ def shoe_size(name)
 end
 
 def team_colors(name_of_team)
-  teams = []
-  teams.push(game_hash[:home][:team_name], game_hash[:away][:team_name])
+  # teams = []
+  # teams.push(game_hash[:home][:team_name], game_hash[:away][:team_name])
+  home_team = game_hash[:home][:team_name]
+  away_team = game_hash[:away][:team_name]
   binding.pry
   teams.each do |bball_team_name|
-
-    if bball_team_name == name_of_team
-    end
-    if bball_team_name == game_hash[:home]
+    if home_team == name_of_team
+      return game_hash[:home][:colors]
+    elsif away == name_of_team
       if bball_team_name == game_hash[:away]
-      binding.pry
-      #if name_of_team ==
-      #end
-      game_hash[:home][:colors]
-      game_hash[:away][:colors]
-      return
+      return game_hash[:away][:colors]
     end
   end
 end
