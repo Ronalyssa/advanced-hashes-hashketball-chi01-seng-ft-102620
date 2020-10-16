@@ -174,8 +174,8 @@ def player_numbers(name_of_bball_teams)
   away_players = game_hash[:away][:players]
   binding.pry
   if name_of_bball_teams == home_team
-    
-  
+
+
     #binding.pry
   hash_of_home_numbers.each do |indv_player|
     if hash_of_home_numbers == name_of_bball_teams
