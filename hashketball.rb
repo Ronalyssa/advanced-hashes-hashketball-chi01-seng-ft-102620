@@ -150,14 +150,13 @@ def shoe_size(name)
 end
 
 def team_colors(name_of_team)
-home_team = game_hash[:home][:team_name]
-away_team = game_hash[:away][:team_name]
+  home_team = game_hash[:home][:team_name]
+  away_team = game_hash[:away][:team_name]
 #teams.each do |bball_team_name|
-    if home_team == name_of_team
+  if home_team == name_of_team
     return game_hash[:home][:colors]
-    elsif away == name_of_team
-       return game_hash[:away][:colors]
-    end
+  elsif away == name_of_team
+    return game_hash[:away][:colors]
   end
 end
 
