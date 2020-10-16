@@ -166,11 +166,16 @@ def team_names
 end
 
 def player_numbers(name_of_bball_teams)
-  hash_of_home_numbers = game_hash[:home][:players]
-  hash_of_away_numbers = game_hash[:away][:players]
-  #binding.pry
-
+  home_team = game_hash[:home][:team_name]
+  away_team = game_hash[:away][:team_name]
   home_numbers = []
+  away_numbers = []
+  home_players = game_hash[:home][:players]
+  away_players = game_hash[:away][:players]
+  binding.pry
+  if name_of_bball_teams == home_team
+    
+  
     #binding.pry
   hash_of_home_numbers.each do |indv_player|
     if hash_of_home_numbers == name_of_bball_teams
