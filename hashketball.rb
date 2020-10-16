@@ -201,4 +201,5 @@ end
 def player_stats(name)
   players = game_hash[:home][:players] + game_hash[:away][:players]
   players[name]
+  binding.pry
 end
